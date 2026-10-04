@@ -29,6 +29,7 @@
 
 <h2>4. Google AdMob and external services</h2>
 <p>The app uses AdMob banner and native ads and includes support for optional rewarded ads. Closed-test builds use Google's test ads. For advertising, analytics and fraud prevention, the SDK may collect and share IP-based approximate location, interactions, diagnostic/performance data and device or account identifiers such as app set IDs. This app does not request Android advertising ID permission.</p>
+<p>On Android 13 and later, excluding that permission returns a zeroed advertising ID. Earlier Android versions may allow SDK access without it, subject to device settings and Google's policies. This exclusion does not stop all advertising identifiers or data handling.</p>
 <p>SDK data uses TLS in transit and is handled under Google's policies, potentially outside your country. Photos, photo URIs, names, EXIF and compression history are not passed to the SDK. Compression and saving work without ad connectivity.</p>
 <ul>
 <li><a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
