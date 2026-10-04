@@ -1,0 +1,16 @@
+WEBVTT
+
+00:00.000 --> 00:05.000
+Emulator demonstration. Battery readings are supplied by Android test commands.
+
+00:05.000 --> 00:11.000
+User starts a charging session; the ongoing monitoring notification is shown.
+
+00:11.000 --> 00:18.000
+Screen off. The test battery reading reaches the 80% target.
+
+00:18.000 --> 00:26.000
+On wake, the 80% target notification is visible.
+
+00:26.000 --> 00:34.000
+The test unplug event ends the foreground monitoring session.
