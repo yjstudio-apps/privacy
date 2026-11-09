@@ -38,7 +38,7 @@
 <body>
 
 <h1>개인정보처리방침 — 꿈꾸는 로또 추첨기</h1>
-<p class="updated">최종 수정일: 2026년 10월 20일</p>
+<p class="updated">최종 수정일: 2026년 11월 9일</p>
 <p>YJ Studio(이하 &quot;개발자&quot;)는 「꿈꾸는 로또 추첨기」(이하 &quot;앱&quot;)에서 처리하는 정보와 외부 서비스의 이용 방식을 다음과 같이 안내합니다. 앱에는 회원가입과 로그인 기능이 없습니다.</p>
 <h2>1. 기기에 저장하는 정보</h2>
 <p>저장한 로또 번호와 당첨 대조 결과, 꿈 일기와 풀이, 즐겨찾는 판매점, 앱 설정 및 당첨번호 캐시는 기기에 저장됩니다. 개발자의 서버로 자동 동기화하지 않습니다. 이 앱은 Android의 자동 백업 및 기기 이전에 이 데이터를 포함하지 않도록 설정합니다. 앱 데이터 삭제 또는 앱 삭제 시 기기에 저장된 기록이 삭제됩니다.</p>
@@ -48,7 +48,8 @@
 <div style="overflow-x:auto"><table><thead><tr><th>서비스</th><th>목적</th><th>처리하는 정보</th></tr></thead><tbody>
 <tr><td>동행복권</td><td>회차별 당첨번호 조회</td><td>조회할 회차, 통신 과정의 IP 주소</td></tr>
 <tr><td>Google 뉴스 RSS</td><td>로또 뉴스 제목·링크 표시</td><td>고정 검색어, 통신 과정의 IP 주소</td></tr>
-<tr><td>Google AdMob</td><td>배너·보상형 광고, 광고 성과 분석 및 부정 이용 방지</td><td>광고 ID(AAID), 앱 세트 ID 등 기기 식별자, 앱 실행·광고 조회·탭 등 상호작용, 진단·성능 정보, IP 주소 및 이를 통해 추정한 대략적 위치. Google이 이 정보를 수집·공유할 수 있습니다.</td></tr>
+<tr><td>Google AdMob (기존 버전)</td><td>배너·보상형 광고, 광고 성과 분석 및 부정 이용 방지</td><td>광고 ID(AAID), 앱 세트 ID 등 기기 식별자, 앱 실행·광고 조회·탭 등 상호작용, 진단·성능 정보, IP 주소 및 이를 통해 추정한 대략적 위치. Google이 이 정보를 수집·공유할 수 있습니다.</td></tr>
+<tr><td>Unity LevelPlay 및 Unity Ads (Unity 광고가 설정된 버전)</td><td>배너·보상형 광고, 광고 성과 분석 및 부정 이용 방지</td><td>광고 ID 등 기기 및 기타 식별자, SDK가 사용하는 이용자 식별자, 광고·앱 상호작용, 진단 정보, IP 기반 대략적 위치 등. Unity의 SDK 공개 자료에는 구매 이력 항목도 포함됩니다. 이 앱에서 관리하는 로또 번호와 구매 기록은 기기에 저장됩니다.</td></tr>
 <tr><td>AI 꿈 풀이: Cloudflare 중계 서버 → Google Gemini API</td><td>요청한 꿈 풀이 생성</td><td>꿈 이야기 본문. 중계 서버는 일반 풀이의 꿈 원문과 생성 결과를 데이터베이스에 저장하지 않습니다. Google의 보관·활용 방식은 아래 안내와 약관을 따릅니다.</td></tr>
 <tr><td>AI 번호 추천: Cloudflare 중계 서버 → Google Gemini API</td><td>요청한 번호 추첨 방식 선택</td><td>공개된 과거 회차 당첨번호와 출현 통계. 꿈 원문, 저장한 구매 번호, 위치 정보는 이 기능에서 전송하지 않습니다. 중계 서버는 이 기능의 회차 입력과 추천 결과를 데이터베이스에 저장하지 않습니다.</td></tr>
 <tr><td>Cloudflare 중계 서버</td><td>요청 처리 및 남용 방지</td><td>IP 주소, 기기에 무작위로 만든 설치 식별값. 요청 제한에 사용하며, 신고 저장 항목에는 포함하지 않습니다. 서비스 운영에 필요한 상태 코드 등 기술 정보가 로그에 남을 수 있습니다.</td></tr>
@@ -64,7 +65,7 @@
 <li>상세한 보관·처리 조건은 <a href="https://ai.google.dev/gemini-api/terms">Gemini API 이용약관</a>을 확인하세요. 중계 서버에 저장하지 않는다는 설명은 Google의 보관이나 활용이 없다는 뜻이 아닙니다.</li>
 <li>AI 풀이와 신고는 선택 기능입니다. 설치 식별값은 로그인 정보가 아닌 무작위 값이며, 기기의 앱 데이터를 삭제하면 함께 삭제됩니다.</li>
 </ul>
-<p>Google의 광고 데이터 처리 방식은 <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 서비스 안내</a>에서 확인할 수 있습니다. 광고 ID는 Android 개인정보 보호 설정에서 재설정하거나 삭제할 수 있습니다.</p>
+<p>광고 데이터 처리 방식은 <a href="https://unity.com/legal/game-player-and-app-user-privacy-policy">Unity 개인정보처리방침</a>과 <a href="https://policies.google.com/technologies/partner-sites">Google 파트너 서비스 안내</a>에서 확인할 수 있습니다. 광고 ID는 Android 개인정보 보호 설정에서 재설정하거나 삭제할 수 있습니다.</p>
 <h2>3. 권한</h2>
 <div style="overflow-x:auto"><table><thead><tr><th>권한</th><th>용도</th></tr></thead><tbody>
 <tr><td>카메라</td><td>로또 용지 QR 코드 읽기. 촬영한 이미지를 저장하거나 서버로 전송하지 않습니다.</td></tr>
